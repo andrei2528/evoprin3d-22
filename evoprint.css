@@ -1,0 +1,268 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+main,
+#titlu {
+    text-align: center;
+}
+
+#menu {
+    opacity: 0;
+    display: none;
+}
+
+#linie1 {
+    width: 0.5em;
+    height: 0.1em;
+    background-color: white;
+}
+
+#linie2 {
+    width: 0.7em;
+    height: 0.1em;
+    background-color: white;
+}
+
+#linie3 {
+    width: 0.5em;
+    height: 0.1em;
+    background-color: white;
+}
+
+#menu a {
+    color: #4E5B61;
+    font-size: 2em;
+    text-decoration: none;
+    margin: 2em;
+    display: inline
+}
+
+#menu a:hover {
+    background-color: #4E5B61;
+    color: white;
+}
+
+#linie1,
+#linie2,
+#linie3 {
+    color: #4E5B61;
+}
+
+#linie1 {
+    margin-top: 5px;
+}
+
+#linie3 {
+    margin-bottom: 5px;
+}
+
+#hamburger-icon {
+    color: #4E5B61;
+    font-size: 2em;
+    background-size: 8em 5em;
+    line-height: 0.3em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px white solid;
+    border-radius: 5px;
+}
+
+#hamburger-icon:hover {
+    pointer-events: all;
+    scale: 1.25;
+    background-color: #575352;
+    animation: inherit linear 0.5s ease-out 0.1s;
+}
+
+#hamburger-icon2:hover {
+    pointer-events: fill;
+    scale: 1.25;
+    animation: ease 0.4s all;
+}
+
+#close-hamburger:hover {
+    scale: 1.25;
+    animation: ease 0.4s all;
+    color: red;
+    pointer-events: fill;
+}
+
+#close-hamburger {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 2em;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    background-size: 5em 5em;
+    border: 3px solid white;
+    border-radius: 4px;
+}
+
+#normal hr {
+    width: 1.5em;
+    color: grey;
+    margin-left: 10px;
+}
+
+#titlu {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0) 24%, rgba(147, 147, 147, 0) 48%, rgba(2, 0, 36, 1) 81%);
+    background-size: cover;
+    color: #333;
+    padding: 150px;
+}
+
+#rosu {
+    color: red;
+}
+
+#titlu h1 {
+    font-size: 7em;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+#titlu h1 {
+    animation-name: font-size;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+#titlu h2 {
+    animation-name: font-size;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+@keyframes font-size {
+    from {
+        font-size: 0.5em
+    }
+    to {
+        font-size: 7em;
+    }
+}
+
+#titlu h2 {
+    animation-name: slideleft;
+    animation-duration: 3s;
+}
+
+@keyframes slideleft {
+    from {
+        margin-right: 50;
+        width: 500;
+    }
+    to {
+        margin-left: 100;
+        width: 100%;
+    }
+}
+
+#titlu h2 {
+    font-size: 3.5em;
+    color: white;
+    background-color: black;
+}
+
+#titlu h1 h2:hover {
+    opacity: 50%;
+}
+
+#cards {
+    display: flex;
+    align-items: stretch;
+    max-width: 11.5em;
+}
+
+#linie {
+    background-color: #4E5B61;
+    height: 6px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#litere:hover #linie,
+#modelare3d:hover #linie,
+#gravare:hover #linie {
+    animation-name: slideright;
+    animation-duration: 4s;
+}
+
+@keyframes slideright {
+    from {
+        margin-left: 0;
+        width: 0%;
+    }
+    to {
+        margin-right: 100px;
+        width: 100%;
+    }
+}
+
+#modelare3d,
+#gravare,
+#litere {
+    margin: 40px;
+    border: 5px solid #575352;
+    box-shadow: 60px -16px #403D3D;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+#cards h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4E5B61;
+}
+
+#modelare3d:hover,
+#gravare:hover,
+#litere:hover {
+    transform: translateX(-10px);
+    transform: translateY(35px);
+}
+
+#modelare3d h2 {
+    background-image: url("https://evoprint3d.files.wordpress.com/2021/04/maxresdefault-1.jpg?w=1024");
+    padding: 3.5em;
+    background-size: cover;
+}
+
+#gravare h2 {
+    background-image: url("https://evoprint3d.files.wordpress.com/2021/04/123-1.jpg?w=1024");
+    background-size: cover;
+    padding: 3.5em 3.5em 5em 3.5em;
+}
+
+#litere h2 {
+    background-image: url("https://evoprint3d.files.wordpress.com/2021/04/litere-polistiren-site.jpg?w=1024");
+    background-size: cover;
+    padding-top: 3.5em;
+    padding-left: 3.5em;
+    padding-right: 3.5em;
+    padding-bottom: 6em;
+}
+
+#cards p {
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#afla-mai-multe {
+    margin-bottom: 0em;
+    background-color: #4E5B61;
+    height: 4em;
+    width: 9em;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: white;
+    border-radius: 5px;
+    align-items: end;
+}
+
+#afla-mai-multe:hover {
+    background-color: white;
+    color: #4E5B61;
+    box-shadow: 2px 2px #4E5B61, 2px 2px #4E5B61, 2px 2px #4E5B61;
+    transition-duration: 0.6s;
+    height: 5em;
+    width: 10em;
+}
